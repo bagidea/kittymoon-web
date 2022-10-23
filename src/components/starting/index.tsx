@@ -3,15 +3,13 @@ import {
     Text,
     HStack,
     VStack,
-    Button,
-    Image,
-    Spacer
+    Image
 } from "@chakra-ui/react"
 
 const Starting = () => (
     <Flex
         w="full"
-        pt="50px"
+        py="50px"
         bgGradient="linear(to-tr, #03b476, #7437f1)"
         alignItems="center"
         justifyContent="center"
