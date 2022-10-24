@@ -17,6 +17,7 @@ const HowToPlay = () => (
         <HStack
             px="10px"
             color="white"
+            spacing="50px"
         >
             <VStack
                 w="450px"
@@ -26,6 +27,7 @@ const HowToPlay = () => (
                 spacing="30px"
                 alignItems="start"
                 _hover={ { boxShadow: "rgba(255, 255, 255, 0.2) 0px 0px 30px" } }
+                rounded="25px"
             >
                 <Text
                     fontSize="28px"
@@ -100,6 +102,22 @@ const HowToPlay = () => (
                     fontSize="16px"
                     fontWeight="600"
                 >Use you Axe to harvesting the full-growth plants in order to receive KITTEN Token.</Text>
+            </VStack>
+
+            <VStack
+                position="relative"
+            >
+                <Image
+                    src="/cover.png"
+                    w="450px"
+                    rounded="25px"
+                />
+
+                <Image
+                    src="/cover.jpg"
+                    w="450px"
+                    rounded="25px"
+                />
             </VStack>
         </HStack>
     </Flex>

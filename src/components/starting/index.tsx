@@ -54,6 +54,7 @@ const Starting = () => (
                             borderColor="rgba(255, 255, 255, 0.2)"
                             spacing="30px"
                             _hover={ { boxShadow: "rgba(255, 255, 255, 0.2) 0px 0px 30px" } }
+                            rounded="25px"
                         >
                             <Image
                                 src="/tool_hoe.png"
@@ -79,6 +80,7 @@ const Starting = () => (
                             borderColor="rgba(255, 255, 255, 0.2)"
                             spacing="30px"
                             _hover={ { boxShadow: "rgba(255, 255, 255, 0.2) 0px 0px 30px" } }
+                            rounded="25px"
                         >
                             <Image
                                 src="/tool_watering_can.png"
@@ -104,6 +106,7 @@ const Starting = () => (
                             borderColor="rgba(255, 255, 255, 0.2)"
                             spacing="30px"
                             _hover={ { boxShadow: "rgba(255, 255, 255, 0.2) 0px 0px 30px" } }
+                            rounded="25px"
                         >
                             <Image
                                 src="/tool_axe.png"
@@ -129,6 +132,7 @@ const Starting = () => (
                             borderColor="rgba(255, 255, 255, 0.2)"
                             spacing="30px"
                             _hover={ { boxShadow: "rgba(255, 255, 255, 0.2) 0px 0px 30px" } }
+                            rounded="25px"
                         >
                             <Image
                                 src="/seed.png"
@@ -159,6 +163,7 @@ const Starting = () => (
                             borderColor="rgba(255, 255, 255, 0.2)"
                             spacing="30px"
                             _hover={ { boxShadow: "rgba(255, 255, 255, 0.2) 0px 0px 30px" } }
+                            rounded="25px"
                         >
                             <Image
                                 src="/land.png"
@@ -184,6 +189,7 @@ const Starting = () => (
                             borderColor="rgba(255, 255, 255, 0.2)"
                             spacing="30px"
                             _hover={ { boxShadow: "rgba(255, 255, 255, 0.2) 0px 0px 30px" } }
+                            rounded="25px"
                         >
                             <Image
                                 src="/house.png"
