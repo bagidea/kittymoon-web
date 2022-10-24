@@ -10,16 +10,29 @@ import {
 
 const HowToPlay = () => (
     <Flex
+        position="relative"
         w="full"
         py="50px"
         bgGradient="linear(to-tr, #03b476, #7437f1)"
         alignItems="center"
         justifyContent="center"
     >
+        <Flex
+            position="absolute"
+            w="full"
+            h="full"
+            top="0px"
+            left="0px"
+            bgImage="/banner.png"
+            bgSize="cover"
+            opacity="0.1"
+        />
+
         <VStack
             px="10px"
             color="white"
             spacing="50px"
+            zIndex="1"
         >
             <HStack
                 spacing="100px"
@@ -184,12 +197,26 @@ const HowToPlay = () => (
                     >Total Supply: 5,000,000,000 KITTEN with a Burn and Return Mechanism</Text>
 
                     <HStack>
-                        <Button>Buy Tools</Button>
-                        <Button>Buy Seed</Button>
-                        <Button>Upgraded</Button>
+                        <Button
+                            bgColor="rgba(255, 255, 255, 0.1)"
+                            _hover={ { bgColor: "rgba(255, 255, 255, 0.2)" } }
+                        >Buy Tools</Button>
+
+                        <Button
+                            bgColor="rgba(255, 255, 255, 0.1)"
+                            _hover={ { bgColor: "rgba(255, 255, 255, 0.2)" } }
+                        >Buy Seed</Button>
+
+                        <Button
+                            bgColor="rgba(255, 255, 255, 0.1)"
+                            _hover={ { bgColor: "rgba(255, 255, 255, 0.2)" } }
+                        >Upgraded</Button>
                     </HStack>
 
-                    <Button>With The Burn And Return Mechanism!</Button>
+                    <Button
+                        bgColor="rgba(255, 255, 255, 0.1)"
+                        _hover={ { bgColor: "rgba(255, 255, 255, 0.2)" } }
+                    >With The Burn And Return Mechanism!</Button>
                 </VStack>
 
                 <Spacer />

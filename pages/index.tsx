@@ -7,6 +7,7 @@ import Header from "../src/components/header"
 import HowToPlay from "../src/components/how_to_play"
 import Starting from "../src/components/starting"
 import Welcome from "../src/components/welcome"
+import Footer from "../src/components/footer"
 
 const Index = () => (
     <Flex
@@ -21,6 +22,7 @@ const Index = () => (
             <Welcome />
             <Starting />
             <HowToPlay />
+            <Footer />
         </VStack>
     </Flex>
 )
