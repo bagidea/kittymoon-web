@@ -13,6 +13,7 @@ const HowToPlay = () => (
         position="relative"
         w="full"
         py="50px"
+        pb="100px"
         bgGradient="linear(to-tr, #03b476, #7437f1)"
         alignItems="center"
         justifyContent="center"
