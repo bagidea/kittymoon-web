@@ -13,6 +13,8 @@ import {
     FaDiscord
 } from "react-icons/fa"
 
+import Link from "next/link"
+
 const Footer = () => (
     <Flex
         position="relative"
@@ -48,10 +50,37 @@ const Footer = () => (
             <Spacer />
 
             <HStack>
-                <FaTelegram />
-                <FaFacebookF />
-                <FaTwitter />
-                <FaDiscord />
+                <Link
+                    href="https://t.me/kittymoongame"
+                >
+                    <a target="_blank">
+                        <FaTelegram />
+                    </a>
+                </Link>
+
+                <Link
+                    href="https://fb.com/kittymoongame"
+                >
+                    <a target="_blank">
+                        <FaFacebookF />
+                    </a>
+                </Link>
+
+                <Link
+                    href="https://twitter.com/kittymoonG"
+                >
+                    <a target="_blank">
+                        <FaTwitter />
+                    </a>
+                </Link>
+
+                <Link
+                    href="https://discord.com/invite/6pQvShSBqD"
+                >
+                    <a target="_blank">
+                        <FaDiscord />
+                    </a>
+                </Link>
             </HStack>
         </HStack>
     </Flex>

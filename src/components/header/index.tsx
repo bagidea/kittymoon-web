@@ -25,11 +25,12 @@ const Header = () => (
             <Link
                 href="/"
             >
-                <Text
-                    fontSize="24px"
-                    fontWeight="800"
-                    cursor="pointer"
-                >KITTYMOON.IO</Text>
+                <a>
+                    <Text
+                        fontSize="24px"
+                        fontWeight="800"
+                    >KITTYMOON.IO</Text>
+                </a>
             </Link>
 
             <Spacer />
@@ -38,9 +39,11 @@ const Header = () => (
                 spacing="20px"
                 fontWeight="600"
             >
-                <Text
-                    cursor="pointer"
-                >HOME</Text>
+                <Link
+                    href="/"
+                >
+                    <a><Text>HOME</Text></a>
+                </Link>
 
                 <Link
                     href="https://doc.kittymoon.io"

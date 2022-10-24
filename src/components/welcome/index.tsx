@@ -99,14 +99,16 @@ const Welcome = () => (
                         <Link
                             href="https://wax.atomichub.io/explorer/collection/kittymoonnft"
                         >
-                            <Button
-                                px="20px"
-                                py="25px"
-                                bgColor="white"
-                                color="#4dbc15"
-                                boxShadow="rgba(0, 0, 0, 0.1) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;"
-                                _hover={ { color: "white", bgColor: "rgba(255, 255, 255, 0.2)" } }
-                            >MARKETPLACE</Button>
+                            <a target="_blank">
+                                <Button
+                                    px="20px"
+                                    py="25px"
+                                    bgColor="white"
+                                    color="#4dbc15"
+                                    boxShadow="rgba(0, 0, 0, 0.1) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;"
+                                    _hover={ { color: "white", bgColor: "rgba(255, 255, 255, 0.2)" } }
+                                >MARKETPLACE</Button>
+                            </a>
                         </Link>
                     </HStack>
                 </Flex>
