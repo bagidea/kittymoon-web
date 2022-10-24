@@ -19,7 +19,7 @@ const Footer = () => (
     <Flex
         position="relative"
         w="full"
-        py="50px"
+        py="40px"
         bgColor="black"
         alignItems="center"
         justifyContent="center"
@@ -49,7 +49,10 @@ const Footer = () => (
 
             <Spacer />
 
-            <HStack>
+            <HStack
+                fontSize="28px"
+                spacing="20px"
+            >
                 <Link
                     href="https://t.me/kittymoongame"
                 >

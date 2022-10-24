@@ -13,7 +13,7 @@ const Team = () => (
         position="relative"
         w="full"
         h="500px"
-        pt="40px"
+        pt="30px"
         bgGradient="linear(to-b, #003010, #4407d1)"
         alignItems="center"
         justifyContent="center"
@@ -33,7 +33,7 @@ const Team = () => (
         <VStack
             h="full"
             color="white"
-            spacing="20px"
+            spacing="30px"
             zIndex="1"
         >
             <Text
