@@ -169,7 +169,7 @@ const HowToPlay = () => (
             <HStack
                 w="1000px"
                 pr="100px"
-                pb="100px"
+                pb="50px"
                 color="white"
             >
                 <VStack

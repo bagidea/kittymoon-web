@@ -4,9 +4,10 @@ import {
 } from "@chakra-ui/react"
 
 import Header from "../src/components/header"
-import HowToPlay from "../src/components/how_to_play"
-import Starting from "../src/components/starting"
 import Welcome from "../src/components/welcome"
+import Starting from "../src/components/starting"
+import HowToPlay from "../src/components/how_to_play"
+import Team from "../src/components/team"
 import Footer from "../src/components/footer"
 
 const Index = () => (
@@ -22,6 +23,7 @@ const Index = () => (
             <Welcome />
             <Starting />
             <HowToPlay />
+            <Team />
             <Footer />
         </VStack>
     </Flex>
