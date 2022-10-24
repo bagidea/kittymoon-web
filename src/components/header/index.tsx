@@ -4,6 +4,7 @@ import {
     HStack,
     Spacer
 } from "@chakra-ui/react"
+
 import Link from "next/link"
 
 const Header = () => (

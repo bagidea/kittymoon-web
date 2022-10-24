@@ -169,6 +169,7 @@ const HowToPlay = () => (
             <HStack
                 w="1000px"
                 pr="100px"
+                pb="100px"
                 color="white"
             >
                 <VStack
@@ -226,6 +227,26 @@ const HowToPlay = () => (
                     w="200px"
                 />
             </HStack>
+
+            <Text
+                fontSize="45px"
+                fontWeight="800"
+            >ECONOMIC</Text>
+
+            <Image
+                src="/economic.png"
+                w="800px"
+            />
+
+            <Text
+                fontSize="45px"
+                fontWeight="800"
+            >ROADMAP</Text>
+
+            <Image
+                src="/roadmap.png"
+                w="1000px"
+            />
         </VStack>
     </Flex>
 )
