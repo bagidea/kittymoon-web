@@ -45,6 +45,7 @@ const Team = () => (
                 spacing="100px"
             >
                 <VStack
+                    w="300px"
                     spacing="0px"
                 >
                     <Image
@@ -63,12 +64,13 @@ const Team = () => (
                     >VP</Text>
 
                     <Text
-                        fontSize="18px"
+                        fontSize="16px"
                         fontWeight="600"
                     >Game Developer & Legal Director</Text>
                 </VStack>
 
                 <VStack
+                    w="300px"
                     spacing="0px"
                 >
                     <Image
@@ -87,12 +89,13 @@ const Team = () => (
                     >CEO</Text>
 
                     <Text
-                        fontSize="18px"
+                        fontSize="16px"
                         fontWeight="600"
                     >Full Stack & Smart Contract Developer</Text>
                 </VStack>
 
                 <VStack
+                    w="300px"
                     spacing="0px"
                 >
                     <Image
@@ -111,7 +114,7 @@ const Team = () => (
                     >AVP</Text>
 
                     <Text
-                        fontSize="18px"
+                        fontSize="16px"
                         fontWeight="600"
                     >Art Director</Text>
                 </VStack>
