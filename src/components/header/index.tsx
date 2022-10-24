@@ -71,7 +71,7 @@ const Header = () => (
                 >TEAM</Text>
 
                 <Link
-                    href="https://discord.gg/rfQBs9KJzx"
+                    href="https://discord.com/invite/6pQvShSBqD"
                 >
                     <Text
                         cursor="pointer"
