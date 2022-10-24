@@ -108,6 +108,32 @@ const HowToPlay = () => (
                 position="relative"
             >
                 <Image
+                    position="absolute"
+                    top="-120px"
+                    src="/icon.png"
+                    w="100px"
+                    rounded="25px"
+                />
+
+                <Image
+                    position="absolute"
+                    top="-80px"
+                    left="0px"
+                    src="/icon.png"
+                    w="50px"
+                    rounded="25px"
+                />
+
+                <Image
+                    position="absolute"
+                    top="-50px"
+                    right="0px"
+                    src="/icon.png"
+                    w="50px"
+                    rounded="25px"
+                />
+
+                <Image
                     src="/cover.png"
                     w="450px"
                     rounded="25px"
