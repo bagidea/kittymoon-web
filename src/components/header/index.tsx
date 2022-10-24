@@ -45,9 +45,11 @@ const Header = () => (
                 <Link
                     href="https://doc.kittymoon.io"
                 >
-                    <Text
-                        cursor="pointer"
-                    >WHITEPAPER</Text>
+                    <a target="_blank">
+                        <Text
+                            cursor="pointer"
+                        >WHITEPAPER</Text> 
+                    </a>
                 </Link>
 
                 <Text
@@ -73,9 +75,11 @@ const Header = () => (
                 <Link
                     href="https://discord.com/invite/6pQvShSBqD"
                 >
-                    <Text
-                        cursor="pointer"
-                    >DISCORD</Text>
+                    <a target="_blank">
+                        <Text
+                            cursor="pointer"
+                        >DISCORD</Text>
+                    </a>
                 </Link>
             </HStack>
         </HStack>
