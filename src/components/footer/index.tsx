@@ -3,6 +3,7 @@ import {
     Text,
     HStack,
     VStack,
+    Stack,
     Spacer
 } from "@chakra-ui/react"
 
@@ -25,12 +26,15 @@ const Footer = () => (
         justifyContent="center"
         overflow="hidden"
     >
-        <HStack
+        <Stack
+            direction={ { base: "column", lg: "row" } }
             w="1280px"
             px="10px"
             color="white"
             fontSize="16px"
             fontWeight="600"
+            spacing={ { base: "20px", lg: "0px" } }
+            alignItems="center"
         >
             <VStack
                 alignItems="start"
@@ -86,7 +90,7 @@ const Footer = () => (
                     </a>
                 </Link>
             </HStack>
-        </HStack>
+        </Stack>
     </Flex>
 )
 

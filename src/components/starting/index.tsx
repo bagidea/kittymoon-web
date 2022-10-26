@@ -1,7 +1,6 @@
 import {
     Flex,
     Text,
-    HStack,
     VStack,
     Stack,
     Image
