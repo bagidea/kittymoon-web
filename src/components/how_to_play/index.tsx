@@ -3,6 +3,7 @@ import {
     Text,
     HStack,
     VStack,
+    Stack,
     Image,
     Button,
     Spacer
@@ -17,7 +18,7 @@ const HowToPlay = () => (
         bgGradient="linear(to-tr, #03b476, #7437f1)"
         alignItems="center"
         justifyContent="center"
-        overflow="hidden"
+        overflow={ { base: "hidden", lg: "visible" } }
     >
         <Flex
             position="absolute"
@@ -36,7 +37,8 @@ const HowToPlay = () => (
             spacing="50px"
             zIndex="1"
         >
-            <HStack
+            <Stack
+                direction={ { base: "column-reverse", lg: "row" } }
                 spacing="100px"
             >
                 <VStack
@@ -130,43 +132,43 @@ const HowToPlay = () => (
                 >
                     <Image
                         position="absolute"
-                        top="-110px"
+                        top={ { base: "-50px", lg: "-110px" } }
                         src="/icon.png"
-                        w="100px"
+                        w={ { base: "50px", lg: "100px" } }
                         rounded="25px"
                     />
 
                     <Image
                         position="absolute"
-                        top="-80px"
-                        left="0px"
+                        top={ { base: "-50px", lg: "-80px" } }
+                        left={ { base: "100px", lg: "0px" } }
                         src="/icon.png"
-                        w="50px"
+                        w={ { base: "25px", lg: "50px" } }
                         rounded="25px"
                     />
 
                     <Image
                         position="absolute"
-                        top="-50px"
-                        right="0px"
+                        top={ { base: "-30px", lg: "-50px" } }
+                        right={ { base: "100px", lg: "0px" } }
                         src="/icon.png"
-                        w="50px"
+                        w={ { base: "25px", lg: "50px" } }
                         rounded="25px"
                     />
 
                     <Image
                         src="/cover.png"
-                        w="450px"
+                        w={ { base: "350px", lg: "450px" } }
                         rounded="25px"
                     />
 
                     <Image
                         src="/cover.jpg"
-                        w="450px"
+                        w={ { base: "350px", lg: "450px" } }
                         rounded="25px"
                     />
                 </VStack>
-            </HStack>
+            </Stack>
 
             <HStack
                 w="1000px"
