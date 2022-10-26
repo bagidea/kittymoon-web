@@ -3,6 +3,7 @@ import {
     Text,
     HStack,
     VStack,
+    Stack,
     Image
 } from "@chakra-ui/react"
 
@@ -25,12 +26,12 @@ const Starting = () => (
             >GETTING START</Text>
 
             <Text
-                fontSize="45px"
+                fontSize={ { base: "28px", xl: "45px" } }
                 fontWeight="800"
             >CHECK OUR NFT HERE!</Text>
 
             <Text
-                w="550px"
+                w={ { base: "350px", lg: "550px" } }
                 fontSize="18px"
                 fontWeight="600"
                 textAlign="center"
@@ -44,12 +45,13 @@ const Starting = () => (
                 <VStack
                     spacing="20px"
                 >
-                    <HStack
+                    <Stack
+                        direction={ { base: "column", lg: "row" } }
                         spacing="20px"
                         alignItems="start"
                     >
                         <VStack
-                            w="250px"
+                            w={ { base: "300px", lg: "250px" } }
                             padding="20px"
                             border="2px solid"
                             borderColor="rgba(255, 255, 255, 0.2)"
@@ -75,7 +77,7 @@ const Starting = () => (
                         </VStack>
 
                         <VStack
-                            w="250px"
+                            w={ { base: "300px", lg: "250px" } }
                             padding="20px"
                             border="2px solid"
                             borderColor="rgba(255, 255, 255, 0.2)"
@@ -101,7 +103,7 @@ const Starting = () => (
                         </VStack>
 
                         <VStack
-                            w="250px"
+                            w={ { base: "300px", lg: "250px" } }
                             padding="20px"
                             border="2px solid"
                             borderColor="rgba(255, 255, 255, 0.2)"
@@ -127,7 +129,7 @@ const Starting = () => (
                         </VStack>
 
                         <VStack
-                            w="250px"
+                            w={ { base: "300px", lg: "250px" } }
                             padding="20px"
                             border="2px solid"
                             borderColor="rgba(255, 255, 255, 0.2)"
@@ -151,14 +153,15 @@ const Starting = () => (
                                 fontWeight="600"
                             >The seeds in each plant species have four different levels. By the higher level you are, the better benefit you can earn according to such level. By 1 Seed/4Block.</Text>
                         </VStack>
-                    </HStack>
+                    </Stack>
 
-                    <HStack
+                    <Stack
+                        direction={ { base: "column", lg: "row" } }
                         spacing="20px"
                         alignItems="start"
                     >
                         <VStack
-                            w="450px"
+                            w={ { base: "300px", lg: "450px" } }
                             padding="20px"
                             border="2px solid"
                             borderColor="rgba(255, 255, 255, 0.2)"
@@ -168,7 +171,7 @@ const Starting = () => (
                         >
                             <Image
                                 src="/land.png"
-                                w="400px"
+                                w={ { base: "200px", lg: "400px" } }
                             />
 
                             <Text
@@ -184,7 +187,7 @@ const Starting = () => (
                         </VStack>
 
                         <VStack
-                            w="450px"
+                            w={ { base: "300px", lg: "450px" } }
                             padding="20px"
                             border="2px solid"
                             borderColor="rgba(255, 255, 255, 0.2)"
@@ -194,7 +197,7 @@ const Starting = () => (
                         >
                             <Image
                                 src="/house.png"
-                                w="400px"
+                                w={ { base: "200px", lg: "400px" } }
                             />
 
                             <Text
@@ -208,7 +211,7 @@ const Starting = () => (
                                 fontWeight="600"
                             >Normally, you can hold merely 'two tools' for each category. However, if you feel that it is too slow, you can buy a house as well. Buying a house can bring about many special advantages.</Text>
                         </VStack>
-                    </HStack>
+                    </Stack>
                 </VStack>
             </Flex>
         </VStack>
