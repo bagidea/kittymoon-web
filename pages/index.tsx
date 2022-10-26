@@ -12,7 +12,7 @@ import Footer from "../src/components/footer"
 
 const Index = () => (
     <Flex
-        w="100%"
+        w="100vw"
         userSelect="none"
     >
         <VStack
