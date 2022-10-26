@@ -236,8 +236,10 @@ const HowToPlay = () => (
             </Stack>
 
             <Text
-                fontSize="45px"
+                fontSize={ { base: "28px", xl: "45px" } }
                 fontWeight="800"
+                pt={ { base: "30px", lg: "0px" } }
+                pb={ { base: "20px", lg: "0px" } }
             >ECONOMIC</Text>
 
             <Image
@@ -246,8 +248,10 @@ const HowToPlay = () => (
             />
 
             <Text
-                fontSize="45px"
+                fontSize={ { base: "28px", xl: "45px" } }
                 fontWeight="800"
+                pt={ { base: "50px", lg: "0px" } }
+                pb={ { base: "20px", lg: "0px" } }
             >ROADMAP</Text>
 
             <Image
