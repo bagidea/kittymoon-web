@@ -23,6 +23,7 @@ const Footer = () => (
         bgColor="black"
         alignItems="center"
         justifyContent="center"
+        overflow="hidden"
     >
         <HStack
             w="1280px"

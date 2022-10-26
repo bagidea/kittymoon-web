@@ -19,6 +19,7 @@ const Welcome = () => (
         bgSize="cover"
         alignItems="center"
         justifyContent="center"
+        overflow="hidden"
     >
         <HStack
             w="1280px"

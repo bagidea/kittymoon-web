@@ -3,9 +3,7 @@ import {
     Text,
     HStack,
     VStack,
-    Image,
-    Button,
-    Spacer
+    Image
 } from "@chakra-ui/react"
 
 const Team = () => (
@@ -17,6 +15,7 @@ const Team = () => (
         bgGradient="linear(to-b, #003010, #4407d1)"
         alignItems="center"
         justifyContent="center"
+        overflow="hidden"
     >
         <Flex
             position="absolute"
