@@ -3,6 +3,7 @@ import {
     Text,
     HStack,
     VStack,
+    Stack,
     Button,
     Image,
     Spacer
@@ -13,23 +14,27 @@ import Link from "next/link"
 const Welcome = () => (
     <Flex
         w="full"
-        h="600px"
-        pt="80px"
+        h={ { base: "auto", lg: "600px" } }
+        pt={ { base: "60px", lg: "80px" } }
         bgImage="/banner.png"
         bgSize="cover"
         alignItems="center"
         justifyContent="center"
         overflow="hidden"
     >
-        <HStack
-            w="1280px"
-            maxW="1280px"
+        <Stack
+            direction={ { base: "column-reverse", lg: "row" } }
+            w={ { base: "full", lg: "1280px" } }
+            maxW={ { base: "full", lg: "1280px" } }
             px="10px"
+            py="20px"
             color="white"
+            alignItems="center"
+            spacing={ { base: "-10px", lg: "10px" } }
         >
             <VStack
                 position="relative"
-                w="650px"
+                w={ { base: "full", lg: "650px" } }
                 px="30px"
                 pt="10px"
                 pb="40px"
@@ -65,7 +70,7 @@ const Welcome = () => (
                 </HStack>
 
                 <VStack
-                    fontSize="45px"
+                    fontSize={ { base: "28px", xl: "45px" } }
                     fontWeight="800"
                     alignItems="start"
                     spacing="0px"
@@ -119,9 +124,9 @@ const Welcome = () => (
 
             <Image
                 src="/logo.png"
-                w="500px"
+                w={ { base: "300px", lg: "500px" } }
             />
-        </HStack>
+        </Stack>
     </Flex>
 )
 
