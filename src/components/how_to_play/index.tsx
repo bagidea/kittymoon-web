@@ -34,7 +34,7 @@ const HowToPlay = () => (
         <VStack
             px="10px"
             color="white"
-            spacing="50px"
+            spacing={ { base: "0px", lg: "50px" } }
             zIndex="1"
         >
             <Stack
@@ -42,7 +42,7 @@ const HowToPlay = () => (
                 spacing="100px"
             >
                 <VStack
-                    w="450px"
+                    w={ { base: "350px", sm: "450px" } }
                     padding="20px"
                     border="2px solid"
                     borderColor="rgba(255, 255, 255, 0.2)"
@@ -132,16 +132,16 @@ const HowToPlay = () => (
                 >
                     <Image
                         position="absolute"
-                        top={ { base: "-50px", lg: "-110px" } }
+                        top={ { base: "-40px", lg: "-110px" } }
                         src="/icon.png"
-                        w={ { base: "50px", lg: "100px" } }
+                        w={ { base: "60px", lg: "100px" } }
                         rounded="25px"
                     />
 
                     <Image
                         position="absolute"
-                        top={ { base: "-50px", lg: "-80px" } }
-                        left={ { base: "100px", lg: "0px" } }
+                        top={ { base: "-40px", lg: "-80px" } }
+                        left={ { base: "30px", lg: "0px" } }
                         src="/icon.png"
                         w={ { base: "25px", lg: "50px" } }
                         rounded="25px"
@@ -150,7 +150,7 @@ const HowToPlay = () => (
                     <Image
                         position="absolute"
                         top={ { base: "-30px", lg: "-50px" } }
-                        right={ { base: "100px", lg: "0px" } }
+                        right={ { base: "50px", lg: "0px" } }
                         src="/icon.png"
                         w={ { base: "25px", lg: "50px" } }
                         rounded="25px"
@@ -170,14 +170,17 @@ const HowToPlay = () => (
                 </VStack>
             </Stack>
 
-            <HStack
-                w="1000px"
-                pr="100px"
+            <Stack
+                direction={ { base: "column", lg: "row" } }
+                w={ { base: "350px", lg: "1000px" } }
+                pt={ { base: "60px", lg: "0px" } }
                 pb="50px"
+                pr={ { base: "0px", lg: "100px" } }
                 color="white"
+                alignItems="center"
             >
                 <VStack
-                    w="600px"
+                    w={ { base: "350px", lg: "600px" } }
                     alignItems="start"
                     spacing="20px"
                 >
@@ -230,7 +233,7 @@ const HowToPlay = () => (
                     src="/icon.png"
                     w="200px"
                 />
-            </HStack>
+            </Stack>
 
             <Text
                 fontSize="45px"
