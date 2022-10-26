@@ -131,6 +131,8 @@ const Header = () => {
                     >
                         <HStack
                             h="50px"
+                            color="white"
+                            userSelect="none"
                         >
                             <Text
                                 fontSize="24px"
@@ -156,6 +158,8 @@ const Header = () => {
                             py="20px"
                             spacing="20px"
                             fontWeight="600"
+                            color="white"
+                            userSelect="none"
                         >
                             <Link
                                 href="/"
