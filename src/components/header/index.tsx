@@ -47,16 +47,12 @@ const Header: React.FC<{
                 px="10px"
                 color="white"
             >
-                <Link
-                    href="/"
-                >
-                    <a>
-                        <Text
-                            fontSize="24px"
-                            fontWeight="800"
-                        >KITTYMOON.IO</Text>
-                    </a>
-                </Link>
+                <Text
+                    fontSize="24px"
+                    fontWeight="800"
+                    cursor="pointer"
+                    onClick={ () => ref_welcome.current?.scrollIntoView({ behavior: "smooth" }) }
+                >KITTYMOON.IO</Text>
 
                 <Spacer />
 
@@ -183,16 +179,14 @@ const Header: React.FC<{
                                 }
                             >HOME</Text>
 
-                            <Link
-                                href="https://doc.kittymoon.io"
-                            >
-                                <a target="_blank">
+                                <Link
+                                    href="https://doc.kittymoon.io"
+                                >
                                     <Text
                                         cursor="pointer"
                                         onClick={ onClose }
                                     >WHITEPAPER</Text> 
-                                </a>
-                            </Link>
+                                </Link>
 
                             <Text
                                 cursor="pointer"
@@ -247,12 +241,10 @@ const Header: React.FC<{
                             <Link
                                 href="https://discord.com/invite/6pQvShSBqD"
                             >
-                                <a target="_blank">
-                                    <Text
-                                        cursor="pointer"
-                                        onClick={ onClose }
-                                    >DISCORD</Text>
-                                </a>
+                                <Text
+                                    cursor="pointer"
+                                    onClick={ onClose }
+                                >DISCORD</Text>
                             </Link>
                         </VStack>
                     </DrawerBody>
