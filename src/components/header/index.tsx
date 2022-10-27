@@ -15,10 +15,11 @@ import {
   DrawerContent,
 } from "@chakra-ui/react"
 
+import { MutableRefObject } from "react"
 import Link from "next/link"
 import { FaHamburger } from "react-icons/fa"
 
-const Header = () => {
+const Header: React.FC<{ ref_welcome: MutableRefObject<HTMLDivElement> }> = ({ ref_welcome }) => {
     const { isOpen, onOpen, onClose } = useDisclosure()
 
     return (
@@ -57,11 +58,10 @@ const Header = () => {
                     spacing="20px"
                     fontWeight="600"
                 >
-                    <Link
-                        href="/"
-                    >
-                        <a><Text>HOME</Text></a>
-                    </Link>
+                    <Text
+                        onClick={ () => ref_welcome.current?.scrollIntoView({ behavior: "smooth" }) }
+                        cursor="pointer"
+                    >HOME</Text>
 
                     <Link
                         href="https://doc.kittymoon.io"
@@ -161,16 +161,15 @@ const Header = () => {
                             color="white"
                             userSelect="none"
                         >
-                            <Link
-                                href="/"
-                            >
-                                <a>
-                                    <Text
-                                        cursor="pointer"
-                                        onClick={ onClose }
-                                    >HOME</Text>
-                                </a>
-                            </Link>
+                            <Text
+                                cursor="pointer"
+                                onClick={ () => 
+                                    {
+                                        ref_welcome.current?.scrollIntoView({ behavior: "smooth" })
+                                        onClose()
+                                    }
+                                }
+                            >HOME</Text>
 
                             <Link
                                 href="https://doc.kittymoon.io"

@@ -9,10 +9,12 @@ import {
     Spacer
 } from "@chakra-ui/react"
 
+import { MutableRefObject } from "react"
 import Link from "next/link"
 
-const Welcome = () => (
+const Welcome: React.FC<{ _ref: MutableRefObject<HTMLDivElement> }> = ({ _ref }) => (
     <Flex
+        ref={ _ref }
         w="full"
         h={ { base: "auto", lg: "600px" } }
         pt={ { base: "60px", lg: "80px" } }
