@@ -10,7 +10,7 @@ import { MutableRefObject } from "react"
 
 const Starting: React.FC<{ _ref: MutableRefObject<HTMLDivElement> }> = ({ _ref }) => (
     <Flex
-        ref={ _ref }
+        position="relative"
         w="full"
         py="50px"
         bgGradient="linear(to-tr, #03b476, #7437f1)"
@@ -18,6 +18,13 @@ const Starting: React.FC<{ _ref: MutableRefObject<HTMLDivElement> }> = ({ _ref }
         justifyContent="center"
         overflow="hidden"
     >
+        <Flex
+            ref={ _ref }
+            position="absolute"
+            top="-80px"
+            left="0px"
+        />
+
         <VStack
             px="10px"
             color="white"

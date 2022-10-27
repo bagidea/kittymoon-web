@@ -42,9 +42,15 @@ const Index = () => {
                 />
 
                 <Welcome _ref={ ref_welcome } />
-                <Starting _ref={ ref_nft }  />
-                <HowToPlay />
-                <Team />
+                <Starting _ref={ ref_nft } />
+
+                <HowToPlay
+                    _ref_howtoplay={ ref_howtoplay }
+                    _ref_kitten={ ref_kitten }
+                    _ref_roadmap={ ref_roadmap }
+                />
+
+                <Team _ref={ ref_team } />
                 <Footer />
             </VStack>
         </Flex>

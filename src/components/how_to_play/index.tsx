@@ -9,7 +9,13 @@ import {
     Spacer
 } from "@chakra-ui/react"
 
-const HowToPlay = () => (
+import { MutableRefObject } from "react"
+
+const HowToPlay: React.FC<{
+    _ref_howtoplay: MutableRefObject<HTMLDivElement>,
+    _ref_kitten: MutableRefObject<HTMLDivElement>,
+    _ref_roadmap: MutableRefObject<HTMLDivElement>
+}> = ({ _ref_howtoplay, _ref_kitten, _ref_roadmap }) => (
     <Flex
         position="relative"
         w="full"
@@ -20,6 +26,13 @@ const HowToPlay = () => (
         justifyContent="center"
         overflow={ { base: "hidden", lg: "visible" } }
     >
+        <Flex
+            ref={ _ref_howtoplay }
+            position="absolute"
+            top="-80px"
+            left="0px"
+        />
+
         <Flex
             position="absolute"
             w="full"
@@ -180,10 +193,18 @@ const HowToPlay = () => (
                 alignItems="center"
             >
                 <VStack
+                    position="relative"
                     w={ { base: "350px", lg: "600px" } }
                     alignItems="start"
                     spacing="20px"
                 >
+                    <Flex
+                        ref={ _ref_kitten }
+                        position="absolute"
+                        top="-80px"
+                        left="0px"
+                    />
+
                     <Text
                         fontSize="28px"
                         fontWeight="800"
@@ -247,12 +268,23 @@ const HowToPlay = () => (
                 w="800px"
             />
 
-            <Text
-                fontSize={ { base: "28px", xl: "45px" } }
-                fontWeight="800"
-                pt={ { base: "50px", lg: "0px" } }
-                pb={ { base: "20px", lg: "0px" } }
-            >ROADMAP</Text>
+            <Flex
+                position="relative"
+            >
+                <Flex
+                    ref={ _ref_roadmap }
+                    position="absolute"
+                    top="-80px"
+                    left="0px"
+                />
+
+                <Text
+                    fontSize={ { base: "28px", xl: "45px" } }
+                    fontWeight="800"
+                    pt={ { base: "50px", lg: "0px" } }
+                    pb={ { base: "20px", lg: "0px" } }
+                >ROADMAP</Text>
+            </Flex>
 
             <Image
                 src="/roadmap.png"

@@ -6,8 +6,11 @@ import {
     Image
 } from "@chakra-ui/react"
 
-const Team = () => (
+import { MutableRefObject } from "react"
+
+const Team: React.FC<{ _ref: MutableRefObject<HTMLDivElement> }> = ({ _ref }) => (
     <Flex
+        ref={ _ref }
         position="relative"
         w="full"
         h={ { base: "auto", lg: "500px" } }
