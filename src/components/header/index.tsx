@@ -19,7 +19,14 @@ import { MutableRefObject } from "react"
 import Link from "next/link"
 import { FaHamburger } from "react-icons/fa"
 
-const Header: React.FC<{ ref_welcome: MutableRefObject<HTMLDivElement> }> = ({ ref_welcome }) => {
+const Header: React.FC<{
+    ref_welcome: MutableRefObject<HTMLDivElement>,
+    ref_nft: MutableRefObject<HTMLDivElement>,
+    ref_howtoplay: MutableRefObject<HTMLDivElement>,
+    ref_kitten: MutableRefObject<HTMLDivElement>,
+    ref_roadmap: MutableRefObject<HTMLDivElement>,
+    ref_team: MutableRefObject<HTMLDivElement>
+}> = ({ ref_welcome, ref_nft, ref_howtoplay, ref_kitten, ref_roadmap, ref_team }) => {
     const { isOpen, onOpen, onClose } = useDisclosure()
 
     return (
@@ -59,8 +66,8 @@ const Header: React.FC<{ ref_welcome: MutableRefObject<HTMLDivElement> }> = ({ r
                     fontWeight="600"
                 >
                     <Text
-                        onClick={ () => ref_welcome.current?.scrollIntoView({ behavior: "smooth" }) }
                         cursor="pointer"
+                        onClick={ () => ref_welcome.current?.scrollIntoView({ behavior: "smooth" }) }
                     >HOME</Text>
 
                     <Link
@@ -75,22 +82,27 @@ const Header: React.FC<{ ref_welcome: MutableRefObject<HTMLDivElement> }> = ({ r
 
                     <Text
                         cursor="pointer"
+                        onClick={ () => ref_nft.current?.scrollIntoView({ behavior: "smooth" }) }
                     >NFT</Text>
 
                     <Text
                         cursor="pointer"
+                        onClick={ () => ref_howtoplay.current?.scrollIntoView({ behavior: "smooth" }) }
                     >HOW TO PLAY</Text>
 
                     <Text
                         cursor="pointer"
+                        onClick={ () => ref_kitten.current?.scrollIntoView({ behavior: "smooth" }) }
                     >$KITTEN</Text>
 
                     <Text
                         cursor="pointer"
+                        onClick={ () => ref_roadmap.current?.scrollIntoView({ behavior: "smooth" }) }
                     >ROADMAP</Text>
 
                     <Text
                         cursor="pointer"
+                        onClick={ () => ref_team.current?.scrollIntoView({ behavior: "smooth" }) }
                     >TEAM</Text>
 
                     <Link
@@ -184,22 +196,52 @@ const Header: React.FC<{ ref_welcome: MutableRefObject<HTMLDivElement> }> = ({ r
 
                             <Text
                                 cursor="pointer"
+                                onClick={ () => 
+                                    {
+                                        ref_nft.current?.scrollIntoView({ behavior: "smooth" })
+                                        onClose()
+                                    }
+                                }
                             >NFT</Text>
 
                             <Text
                                 cursor="pointer"
+                                onClick={ () => 
+                                    {
+                                        ref_howtoplay.current?.scrollIntoView({ behavior: "smooth" })
+                                        onClose()
+                                    }
+                                }
                             >HOW TO PLAY</Text>
 
                             <Text
                                 cursor="pointer"
+                                onClick={ () => 
+                                    {
+                                        ref_kitten.current?.scrollIntoView({ behavior: "smooth" })
+                                        onClose()
+                                    }
+                                }
                             >$KITTEN</Text>
 
                             <Text
                                 cursor="pointer"
+                                onClick={ () => 
+                                    {
+                                        ref_roadmap.current?.scrollIntoView({ behavior: "smooth" })
+                                        onClose()
+                                    }
+                                }
                             >ROADMAP</Text>
 
                             <Text
                                 cursor="pointer"
+                                onClick={ () => 
+                                    {
+                                        ref_team.current?.scrollIntoView({ behavior: "smooth" })
+                                        onClose()
+                                    }
+                                }
                             >TEAM</Text>
 
                             <Link

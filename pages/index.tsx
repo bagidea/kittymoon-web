@@ -17,6 +17,11 @@ import Footer from "../src/components/footer"
 
 const Index = () => { 
     const ref_welcome: MutableRefObject<HTMLDivElement> = useRef<HTMLDivElement>(null)
+    const ref_nft: MutableRefObject<HTMLDivElement> = useRef<HTMLDivElement>(null)
+    const ref_howtoplay: MutableRefObject<HTMLDivElement> = useRef<HTMLDivElement>(null)
+    const ref_kitten: MutableRefObject<HTMLDivElement> = useRef<HTMLDivElement>(null)
+    const ref_roadmap: MutableRefObject<HTMLDivElement> = useRef<HTMLDivElement>(null)
+    const ref_team: MutableRefObject<HTMLDivElement> = useRef<HTMLDivElement>(null)
 
     return (
         <Flex
@@ -29,6 +34,11 @@ const Index = () => {
             >
                 <Header
                     ref_welcome={ ref_welcome }
+                    ref_nft={ ref_nft }
+                    ref_howtoplay={ ref_howtoplay }
+                    ref_kitten={ ref_kitten }
+                    ref_roadmap={ ref_roadmap }
+                    ref_team={ ref_team }
                 />
 
                 <Welcome _ref={ ref_welcome } />
