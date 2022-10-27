@@ -6,8 +6,11 @@ import {
     Image
 } from "@chakra-ui/react"
 
-const Starting = () => (
+import { MutableRefObject } from "react"
+
+const Starting: React.FC<{ _ref: MutableRefObject<HTMLDivElement> }> = ({ _ref }) => (
     <Flex
+        ref={ _ref }
         w="full"
         py="50px"
         bgGradient="linear(to-tr, #03b476, #7437f1)"

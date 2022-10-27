@@ -42,7 +42,7 @@ const Index = () => {
                 />
 
                 <Welcome _ref={ ref_welcome } />
-                <Starting />
+                <Starting _ref={ ref_nft }  />
                 <HowToPlay />
                 <Team />
                 <Footer />
