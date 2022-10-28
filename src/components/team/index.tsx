@@ -10,7 +10,6 @@ import { MutableRefObject } from "react"
 
 const Team: React.FC<{ _ref: MutableRefObject<HTMLDivElement> }> = ({ _ref }) => (
     <Flex
-        ref={ _ref }
         position="relative"
         w="full"
         h={ { base: "auto", lg: "500px" } }
@@ -20,6 +19,13 @@ const Team: React.FC<{ _ref: MutableRefObject<HTMLDivElement> }> = ({ _ref }) =>
         justifyContent="center"
         overflow="hidden"
     >
+        <Flex
+            ref={ _ref }
+            position="absolute"
+            top="-80px"
+            left="0px"
+        />
+
         <Flex
             position="absolute"
             w="full"
