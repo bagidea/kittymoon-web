@@ -14,6 +14,7 @@ import Starting from "../src/components/starting"
 import HowToPlay from "../src/components/how_to_play"
 import Team from "../src/components/team"
 import Footer from "../src/components/footer"
+import Packs from "../src/components/packs"
 
 const Index = () => { 
     const ref_welcome: MutableRefObject<HTMLDivElement> = useRef<HTMLDivElement>(null)
@@ -42,6 +43,7 @@ const Index = () => {
                 />
 
                 <Welcome _ref={ ref_welcome } />
+                { /*<Packs />*/ }
                 <Starting _ref={ ref_nft } />
 
                 <HowToPlay
